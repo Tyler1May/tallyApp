@@ -27,7 +27,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert incriment you'd like to increase by. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am6-Y3-v60">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert incriment you'd like to change the number by. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am6-Y3-v60">
                                 <rect key="frame" x="42" y="93" width="309" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -52,8 +52,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hym-cy-ovr">
+                                <rect key="frame" x="215" y="232" width="45.999999999999972" height="35"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="decreaseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vFt-BV-DFG"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-Cx-gMs">
-                                <rect key="frame" x="174" y="232" width="45" height="34.333333333333314"/>
+                                <rect key="frame" x="132" y="232" width="45.666666666666657" height="34.333333333333314"/>
                                 <color key="tintColor" red="0.29356887030000001" green="0.89000000000000001" blue="0.12656004770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.up" catalog="system"/>
@@ -65,26 +74,27 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="D0z-Cx-gMs" firstAttribute="top" secondItem="v4n-Tg-cGj" secondAttribute="bottom" constant="34" id="14y-Lo-6lG"/>
                             <constraint firstItem="Zpm-Ab-Kit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Bo-qj-VIV"/>
-                            <constraint firstItem="D0z-Cx-gMs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="9Y6-5q-VCC"/>
+                            <constraint firstItem="D0z-Cx-gMs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="8QV-tg-CFl"/>
                             <constraint firstItem="am6-Y3-v60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="Diw-Pj-Kus"/>
                             <constraint firstItem="v4n-Tg-cGj" firstAttribute="top" secondItem="am6-Y3-v60" secondAttribute="bottom" constant="30.329999999999998" id="Drc-It-nfc"/>
                             <constraint firstItem="x2e-0s-d7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Ew6-AH-1YC"/>
                             <constraint firstItem="Zpm-Ab-Kit" firstAttribute="top" secondItem="6uh-Va-2HJ" secondAttribute="bottom" constant="82" id="IBo-n1-gvg"/>
                             <constraint firstItem="6uh-Va-2HJ" firstAttribute="top" secondItem="x2e-0s-d7T" secondAttribute="bottom" constant="30" id="Ji8-LF-DPB"/>
                             <constraint firstItem="am6-Y3-v60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="LVX-J4-pfx"/>
+                            <constraint firstItem="hym-cy-ovr" firstAttribute="leading" secondItem="D0z-Cx-gMs" secondAttribute="trailing" constant="37.329999999999998" id="P6Z-sL-wR6"/>
+                            <constraint firstItem="hym-cy-ovr" firstAttribute="top" secondItem="v4n-Tg-cGj" secondAttribute="bottom" constant="34" id="UEK-cD-tow"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v4n-Tg-cGj" secondAttribute="trailing" constant="132" id="Z5X-82-EEf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zpm-Ab-Kit" secondAttribute="bottom" constant="264" id="ZJ7-D5-XyF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="am6-Y3-v60" secondAttribute="trailing" constant="42" id="Zw4-S8-Z3m"/>
                             <constraint firstItem="5ge-Ab-ytj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x2e-0s-d7T" secondAttribute="trailing" symbolic="YES" id="a13-8I-IOn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ge-Ab-ytj" secondAttribute="trailing" constant="78.333333333333371" id="dSl-V6-ltn"/>
                             <constraint firstItem="v4n-Tg-cGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="iJ5-Rw-l4a"/>
-                            <constraint firstItem="x2e-0s-d7T" firstAttribute="top" secondItem="D0z-Cx-gMs" secondAttribute="bottom" constant="59.670000000000002" id="krg-Jn-fE2"/>
+                            <constraint firstItem="5ge-Ab-ytj" firstAttribute="top" secondItem="hym-cy-ovr" secondAttribute="bottom" constant="52" id="iQL-HU-AKa"/>
+                            <constraint firstItem="D0z-Cx-gMs" firstAttribute="top" secondItem="v4n-Tg-cGj" secondAttribute="bottom" constant="34" id="kLs-n7-XqJ"/>
                             <constraint firstItem="6uh-Va-2HJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="mcS-4L-0Nj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6uh-Va-2HJ" secondAttribute="trailing" constant="159" id="s5t-o5-NpY"/>
-                            <constraint firstItem="5ge-Ab-ytj" firstAttribute="top" secondItem="D0z-Cx-gMs" secondAttribute="bottom" constant="52.670000000000002" id="tJ5-HT-aVz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D0z-Cx-gMs" secondAttribute="trailing" constant="174" id="xT4-OB-3B5"/>
+                            <constraint firstItem="x2e-0s-d7T" firstAttribute="top" secondItem="D0z-Cx-gMs" secondAttribute="bottom" constant="59.670000000000002" id="xyS-JN-tav"/>
                         </constraints>
                     </view>
                     <connections>
@@ -99,9 +109,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.down" catalog="system" width="118" height="128"/>
         <image name="arrow.up" catalog="system" width="118" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
